@@ -7,10 +7,10 @@
             // Arrange
             $testWord = 'a';
             $testString = 'a';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);
@@ -21,10 +21,10 @@
             // Arrange
             $testWord = 'a';
             $testString = 'a a';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('2', $result);
@@ -35,10 +35,10 @@
             // Arrange
             $testWord = 'cat';
             $testString = 'cat';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);
@@ -49,10 +49,10 @@
             // Arrange
             $testWord = 'cat';
             $testString = 'cat cat';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('2', $result);
@@ -63,10 +63,10 @@
             // Arrange
             $testWord = 'cat';
             $testString = 'cat dog cat rabbit';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('2', $result);
@@ -77,10 +77,10 @@
             // Arrange
             $testWord = 'A';
             $testString = 'a';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);
@@ -91,10 +91,10 @@
             // Arrange
             $testWord = 'a';
             $testString = 'A';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);
@@ -105,10 +105,10 @@
             // Arrange
             $testWord = 'cat';
             $testString = 'The cat is in the cathedral';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);
@@ -119,10 +119,10 @@
             // Arrange
             $testWord = 'cat';
             $testString = 'Where is my cat?';
-            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+            $testRepeatCounter = new RepeatCounter($testWord, $testString);
 
             // Act
-            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+            $result = $testRepeatCounter->countRepeats($testWord, $testString);
 
             // Assert
             $this->assertEquals('1', $result);

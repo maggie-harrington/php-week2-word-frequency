@@ -72,5 +72,19 @@
             $this->assertEquals('2', $result);
         }
 
+        function test6CheckCountRepeats()
+        {
+            // Arrange
+            $testWord = 'A';
+            $testString = 'a';
+            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+
+            // Act
+            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+
+            // Assert
+            $this->assertEquals('1', $result);
+        }
+
     }
 ?>

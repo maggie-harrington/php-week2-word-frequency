@@ -29,6 +29,20 @@
             // Assert
             $this->assertEquals('2', $result);
         }
-        
+
+        function test3CheckCountRepeats()
+        {
+            // Arrange
+            $testWord = 'cat';
+            $testString = 'cat';
+            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+
+            // Act
+            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+
+            // Assert
+            $this->assertEquals('1', $result);
+        }
+
     }
 ?>

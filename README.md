@@ -38,12 +38,12 @@ Copyright (c) 2017 Maggie Harrington
 | Test cases for countRepeats()    | Input    | Output  |
 |----------------------------------|----------|---------|
 | 1: Single letter word matching test  | 'a', 'a' | 1 |
-| 2: Ignore case in word  | 'A', 'a' | 1 |
-| 3: Ignore case in string  | 'a', 'A' | 1 |
-| 4: Find multiple instances of single letter in string  | 'a', 'a a' | 2 |
-| 5: Multiple letters in word  | 'cat', 'cat' | 1 |
-| 6: Multiple letters in word, multiple instances in string  | 'cat', 'cat cat' | 2 |
-| 7: Ignore non-matching words  | 'cat', 'cat dog cat rabbit' | 2 |
+| 2: Find multiple instances of single letter in string  | 'a', 'a a' | 2 |
+| 3: Multiple letters in word  | 'cat', 'cat' | 1 |
+| 4: Multiple letters in word, multiple instances in string  | 'cat', 'cat cat' | 2 |
+| 5: Ignore non-matching words  | 'cat', 'cat dog cat rabbit' | 2 |
+| 6: Ignore case in word  | 'A', 'a' | 1 |
+| 7: Ignore case in string  | 'a', 'A' | 1 |
 | 8: Ignore partial word matches  | 'cat', 'The cat is in the cathedral' | 1 |
 
 

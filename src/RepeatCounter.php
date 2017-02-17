@@ -23,6 +23,8 @@
         function countRepeats($inputWord, $inputString)
         {
             $inputWord = strtolower($inputWord);
+            $inputString = strtolower($inputString);
+
             $repeatNumber = substr_count($inputString, $inputWord);
             var_dump($repeatNumber);
             return $repeatNumber;

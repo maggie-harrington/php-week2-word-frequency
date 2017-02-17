@@ -16,5 +16,19 @@
             $this->assertEquals('1', $result);
         }
 
+        function test2CheckCountRepeats()
+        {
+            // Arrange
+            $testWord = 'a';
+            $testString = 'a a';
+            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+
+            // Act
+            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+
+            // Assert
+            $this->assertEquals('2', $result);
+        }
+        
     }
 ?>

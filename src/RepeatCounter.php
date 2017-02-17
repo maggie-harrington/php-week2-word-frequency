@@ -22,7 +22,8 @@
 
         function countRepeats($inputWord, $inputString)
         {
-            $repeatNumber = "";
+            $repeatNumber = substr_count($inputString, $inputWord);
+            var_dump($repeatNumber);
             return $repeatNumber;
         }
 

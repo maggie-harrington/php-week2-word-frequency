@@ -41,10 +41,11 @@ Copyright (c) 2017 Maggie Harrington
 | 2: Find multiple instances of single letter in string  | 'a', 'a a' | 2 |
 | 3: Multiple letters in word  | 'cat', 'cat' | 1 |
 | 4: Multiple letters in word, multiple instances in string  | 'cat', 'cat cat' | 2 |
-| 5: Ignore non-matching words  | 'cat', 'cat dog cat rabbit' | 2 |
+| 5: Do not count non-matching words  | 'cat', 'cat dog cat rabbit' | 2 |
 | 6: Ignore case in word  | 'A', 'a' | 1 |
 | 7: Ignore case in string  | 'a', 'A' | 1 |
-| 8: Ignore partial word matches  | 'cat', 'The cat is in the cathedral' | 1 |
+| 8: Do not count partial word matches  | 'cat', 'The cat is in the cathedral' | 1 |
+| 9: Ignore punctuation  | Where is my cat? | 1 |
 
 
 These test values were chosen because they start as simple as possible and continually increase in complexity. Behavior is tested by inputting each case of word and string combos into countRepeats() and checking whether the corresponding expected output is returned.

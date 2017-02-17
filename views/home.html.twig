@@ -2,21 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
     </head>
     <body>
-        <h1>Repeat Counter</h1>
-        <p>Count the number of times a word appears in a string of text:</p>
-        <form action='/results' method='post'>
-            <label for='entered-word'>Enter a word:</label><br>
-            <input type="text" id='entered-word' name='entered-word'>
-            <br><br>
+        <div class='container'>
+            <h1>Repeat Counter</h1>
+            <p>Count the number of times a word appears in a string of text:</p>
+            <form action='/results' method='post'>
+                <label for='entered-word'>Enter a word:</label><br>
+                <input type="text" id='entered-word' name='entered-word'>
+                <br><br>
 
-            <label for='entered-string'>Enter a string to search through:</label><br>
-            <input type='text' id='entered-string' name='entered-string'>
-            <br><br>
+                <label for='entered-string'>Enter a string to search through:</label><br>
+                <input type='text' id='entered-string' name='entered-string'>
+                <br><br>
 
-            <button type="submit">Count!</button>
-        </form>
+                <button type="submit">Count!</button>
+            </form>
+        <div>
     </body>
 </html>

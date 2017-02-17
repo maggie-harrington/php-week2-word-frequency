@@ -33,12 +33,15 @@
                     array_push($matchingArray, $inputStringArray[$i]);
                 }
             }
-            // var_dump($matchingArray);
+
             $matchingString = implode(" ", $matchingArray);
-            $repeatNumber = substr_count($matchingString, $inputWord);
+            $repeatNumber = str_word_count($matchingString, 0);
+
+
+            // $repeatNumber = substr_count($matchingString, $inputWord);
 
             // $repeatNumber = substr_count($inputString, $inputWord);
-            // var_dump($repeatNumber);
+
             return $repeatNumber;
         }
 

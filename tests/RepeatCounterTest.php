@@ -58,5 +58,19 @@
             $this->assertEquals('2', $result);
         }
 
+        function test5CheckCountRepeats()
+        {
+            // Arrange
+            $testWord = 'cat';
+            $testString = 'cat dog cat rabbit';
+            $newRepeatCounter = new RepeatCounter($testWord, $testString);
+
+            // Act
+            $result = $newRepeatCounter->countRepeats($testWord, $testString);
+
+            // Assert
+            $this->assertEquals('2', $result);
+        }
+
     }
 ?>

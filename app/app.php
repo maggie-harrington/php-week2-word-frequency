@@ -15,9 +15,5 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->post("/results", function() use ($app) {
-        return $app['twig']->render('results.html.twig');
-    });
-
     return $app;
 ?>

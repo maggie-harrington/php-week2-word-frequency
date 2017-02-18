@@ -17,7 +17,9 @@
 
     $app->post("/results", function() use ($app) {
         $newRepeatCounter = new RepeatCounter($_POST['entered-word'], $_POST['entered-string']);
+
         $newCount = $newRepeatCounter->countRepeats($_POST['entered-word'], $_POST['entered-string']);
+        
         return $app['twig']->render('results.html.twig', array('repeat_number' => $newCount));
     });
 

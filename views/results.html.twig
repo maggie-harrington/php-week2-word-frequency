@@ -2,14 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <title>Repeat Counter</title>
+        <title><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Repeat Counter</title>
     </head>
     <body>
         <div class='container'>
-            <h1>Repeat Counter</h1>
-            <p>Your word appears <span id='repeat-number'>{{ repeat_number }}</span> time(s) in your text.</p>
+            <h1>Repeat <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>  Counter</h1>
+
+            <h3>Your word appears <span id='repeat-number'>{{ repeat_number }}</span> time(s) in your text.</h3>
+
+            <footer>Created by <a href="https://github.com/maggie-harrington">Maggie Harrington</a></footer>
         </div>
     </body>
 </html>

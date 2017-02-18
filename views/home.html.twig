@@ -2,25 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
     </head>
     <body>
         <div class='container'>
-            <h1>Repeat Counter</h1>
-            <p>Count the number of times a word appears in a string of text:</p>
-            <form action='/results' method='post'>
+            <h1>Repeat <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>  Counter</h1>
+
+            <h3>Count the number of times a word appears in your text:</h3><br>
+
+            <form action='/results' method='post' id='user-input'>
                 <label for='entered-word'>Enter a word:</label><br>
-                <input type="text" id='entered-word' name='entered-word'>
+                <input type="text" id='entered-word' name='entered-word' class='form-control'>
                 <br><br>
 
                 <label for='entered-string'>Enter a string to search through:</label><br>
-                <input type='text' id='entered-string' name='entered-string'>
+                <textarea type='text' id='entered-string' name='entered-string' class='form-control'></textarea>
                 <br><br>
 
-                <button type="submit">Count!</button>
+                <button type="submit" class='btn btn-lg'><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search!</button>
             </form>
+
+            <footer>Created by <a href="https://github.com/maggie-harrington">Maggie Harrington</a></footer>
         <div>
     </body>
 </html>
